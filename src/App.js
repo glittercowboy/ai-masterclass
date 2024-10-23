@@ -1,47 +1,103 @@
 import React from 'react';
-import Card from './components/ui/Card';
-import Button from './components/ui/Button';
-import { Check, Clock, Star, Music, Zap, Brain, Target, ArrowRight, X, Sparkles, Globe, Heart } from 'lucide-react';
+import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Check, Clock, Star, Music, Zap, Brain, Target, ArrowRight, X, Sparkles, Globe, Heart, Infinity } from 'lucide-react';
+
+const features = [
+  {
+    icon: <Music className="w-6 h-6" />,
+    title: "AI-Powered Sound Creation",
+    description: "Transform abstract concepts into precisely crafted sonic elements that capture your exact vision.",
+    points: [
+      "Master cutting-edge AI tools",
+      "Create unprecedented sounds",
+      "Design unique sonic textures",
+      "Shape emotional soundscapes"
+    ]
+  },
+  {
+    icon: <Zap className="w-6 h-6" />,
+    title: "Cultural Sound Fusion",
+    description: "Break down barriers between musical traditions to create authentic, innovative sonic landscapes.",
+    points: [
+      "Blend diverse musical traditions",
+      "Create new sonic hybrids",
+      "Design cross-cultural rhythms",
+      "Craft unique textures"
+    ]
+  },
+  {
+    icon: <Brain className="w-6 h-6" />,
+    title: "Revolutionary Workflows",
+    description: "Transform AI into an extension of your creative process, enhancing rather than replacing your vision.",
+    points: [
+      "Pioneer new production methods",
+      "Create emotional depth",
+      "Master advanced techniques",
+      "Build unique sound palettes"
+    ]
+  },
+  {
+    icon: <Target className="w-6 h-6" />,
+    title: "Advanced Sound Design",
+    description: "Push the boundaries of possibility with cutting-edge techniques that redefine music production.",
+    points: [
+      "Master professional tools",
+      "Create impossible combinations",
+      "Design evolving sounds",
+      "Build signature sounds"
+    ]
+  }
+];
 
 export default function MasterclassLanding() {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div style={{ backgroundColor: '#0D0C0D' }} className="min-h-screen text-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-900 via-purple-900 to-blue-900 text-white">
+      <div style={{ 
+        background: 'linear-gradient(135deg, #171617 0%, #0D0C0D 50%, #171617 100%)'
+      }}>
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-6">
-              <Sparkles className="w-8 h-8 text-yellow-400" />
+              <Infinity className="w-8 h-8" style={{ color: '#E6AC55' }} />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Prepare to Have Your Mind Blown
+            <h1 className="font-poppins text-4xl md:text-6xl font-bold mb-6">
+              Experience the Impossible
             </h1>
             <p className="text-xl md:text-2xl mb-8">
-              The AI Sampling Masterclass That Will Reignite Your Creativity Like Never Before
+              A Revolutionary Masterclass in AI-Powered Sound Creation
             </p>
-            <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Master groundbreaking AI techniques that 99% of producers don't even know exist. Create sounds that are impossible to find anywhere else. Make music that's truly, uniquely yours.
+            <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
+              Master groundbreaking techniques that push the boundaries of what's possible in music production. Create sounds that have never existed before.
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
-              <Clock className="w-5 h-5" />
-              <span className="text-lg">2 Hours of Mind-Expanding Knowledge</span>
+              <Clock className="w-5 h-5" style={{ color: '#E6AC55' }} />
+              <span className="text-lg">2 Hours of Creative Liberation</span>
             </div>
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 text-lg px-8 py-6">
-              Join the Revolution
+            <Button 
+              size="lg" 
+              style={{ 
+                backgroundColor: '#E6AC55',
+                color: '#0D0C0D'
+              }}
+              className="hover:opacity-90 text-lg px-8 py-6 font-bold"
+            >
+              Begin Your Journey
             </Button>
           </div>
         </div>
       </div>
 
-      {/* Emotional Hook Section */}
-      <div className="bg-white py-16">
+      {/* Vision Section */}
+      <div style={{ backgroundColor: '#171617' }} className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              This Isn't Just Another AI Workshop
+            <h2 className="font-poppins text-3xl md:text-4xl font-bold">
+              Pioneer the Future of Sound
             </h2>
-            <p className="text-xl text-gray-700">
-              This is your gateway to creating heartfelt, emotionally-charged music that breaks free from the constraints of traditional sampling. No more endless scrolling through sample packs. No more using the same sounds as everyone else.
+            <p className="text-xl text-gray-300">
+              Push beyond traditional sampling constraints. Create emotional, deeply personal music that redefines what's possible.
             </p>
           </div>
         </div>
@@ -49,68 +105,74 @@ export default function MasterclassLanding() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
-        {/* Value Proposition */}
+        {/* Possibilities Section */}
         <div className="max-w-3xl mx-auto mb-16">
-          <div className="space-y-8 text-lg text-gray-700">
-            <div className="bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                Imagine Being Able To...
+          <div className="space-y-8 text-lg text-white">
+            <Card style={{ 
+              background: 'linear-gradient(135deg, #171617 0%, #1A1919 100%)',
+              borderColor: 'rgba(230,172,85,0.2)'
+            }} className="p-8">
+              <h3 className="font-poppins text-2xl font-bold mb-4 text-white">
+                Unlock Your Creative Potential
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-4 text-white">
                 <li className="flex items-start gap-3">
-                  <Sparkles className="w-6 h-6 text-purple-600 mt-1" />
-                  <span>Generate the exact sound you're hearing in your head, even if it doesn't exist anywhere else</span>
+                  <Sparkles className="w-6 h-6 mt-1" style={{ color: '#E6AC55' }} />
+                  <span>Generate sounds that have never existed in human history</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Globe className="w-6 h-6 text-purple-600 mt-1" />
-                  <span>Blend African rhythms with Indian classical melodies and Japanese folk harmonies in ways that feel natural and innovative</span>
+                  <Globe className="w-6 h-6 mt-1" style={{ color: '#E6AC55' }} />
+                  <span>Blend cultural elements in ways that defy traditional boundaries</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Heart className="w-6 h-6 text-purple-600 mt-1" />
-                  <span>Create emotional textures that speak directly to the soul, using AI as your creative partner</span>
+                  <Heart className="w-6 h-6 mt-1" style={{ color: '#E6AC55' }} />
+                  <span>Create emotional landscapes that speak directly to the soul</span>
                 </li>
               </ul>
-            </div>
-            
-            <p className="text-xl">
-              This isn't about replacing your creativity with AI. It's about expanding your artistic possibilities beyond what you thought was possible.
-            </p>
+            </Card>
           </div>
         </div>
 
         {/* Who It's For */}
-        <Card className="max-w-3xl mx-auto p-8 mb-16 bg-gradient-to-br from-gray-50 to-white">
+        <Card style={{ 
+          background: 'linear-gradient(135deg, #171617 0%, #1A1919 100%)',
+          borderColor: 'rgba(230,172,85,0.2)'
+        }} className="max-w-3xl mx-auto p-8 mb-16">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-green-600">This Is For You If:</h3>
+              <h3 className="font-poppins text-2xl font-bold mb-6" style={{ color: '#E6AC55' }}>
+                For Visionary Producers
+              </h3>
               <div className="space-y-4">
                 {[
-                  "You're ready to be at the forefront of music production innovation",
-                  "You're tired of using the same samples as everyone else",
-                  "You want to create sounds that don't exist anywhere else",
-                  "You see AI as a tool for enhancing creativity, not replacing it",
-                  "You're excited about pushing boundaries and breaking rules"
+                  "Ready to pioneer the future of music",
+                  "Seeking to create truly original sounds",
+                  "Excited to push creative boundaries",
+                  "Eager to harness revolutionary technology",
+                  "Driven to stand out from the crowd"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
+                    <Check className="w-5 h-5 mt-1 flex-shrink-0" style={{ color: '#E6AC55' }} />
+                    <span className="text-gray-300">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-red-600">This Is Not For:</h3>
+              <h3 className="font-poppins text-2xl font-bold mb-6" style={{ color: '#E6AC55' }}>
+                Prerequisites
+              </h3>
               <div className="space-y-4">
                 {[
-                  "Beginners who haven't mastered the basics",
-                  "People looking for 'easy' shortcuts to success",
-                  "Those who fear new technology",
-                  "Anyone expecting AI to do all the creative work",
-                  "Producers who want to sound like everyone else"
+                  "Advanced production experience",
+                  "Mastery of basic music theory",
+                  "Familiarity with DAWs",
+                  "Creative ambition",
+                  "Openness to innovation"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
+                    <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" style={{ color: '#E6AC55' }} />
+                    <span className="text-gray-300">{item}</span>
                   </div>
                 ))}
               </div>
@@ -118,73 +180,35 @@ export default function MasterclassLanding() {
           </div>
         </Card>
 
-        {/* What You'll Learn */}
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Master the Techniques That Will Set You Apart
+        {/* Features */}
+        <h2 className="font-poppins text-3xl font-bold text-center mb-12">
+          Master Revolutionary Techniques
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
-          {[
-            {
-              icon: <Music className="w-6 h-6" />,
-              title: "AI-Powered Sound Generation",
-              description: "Learn to speak the language of sound. Transform abstract emotions and ideas into precise, unique samples that capture exactly what you're looking for.",
-              points: [
-                "Master UDIO and Acon Digital Remix",
-                "Create genre-defying sonic textures",
-                "Generate samples that don't exist anywhere else",
-                "Transform emotions into sound"
-              ]
-            },
-            {
-              icon: <Zap className="w-6 h-6" />,
-              title: "Advanced Cultural Fusion",
-              description: "Break down cultural barriers and create unique sonic landscapes by blending diverse musical traditions in ways that feel authentic and fresh.",
-              points: [
-                "Blend African, Indian, and Japanese elements",
-                "Create new genre hybrids",
-                "Master cross-cultural rhythms",
-                "Design unique ethnic textures"
-              ]
-            },
-            {
-              icon: <Brain className="w-6 h-6" />,
-              title: "Creative AI Integration",
-              description: "Transform AI from a basic tool into a true creative partner. Learn workflows that enhance rather than replace your artistic vision.",
-              points: [
-                "Develop AI-enhanced workflows",
-                "Create emotional connections",
-                "Master poetic prompt engineering",
-                "Build unique sound palettes"
-              ]
-            },
-            {
-              icon: <Target className="w-6 h-6" />,
-              title: "Revolutionary Sound Design",
-              description: "Push the boundaries of what's possible with cutting-edge techniques that combine AI generation with advanced production tools.",
-              points: [
-                "Master Melodyne integration",
-                "Create impossible sound combinations",
-                "Design evolving textures",
-                "Build unique sonic signatures"
-              ]
-            }
-          ].map((feature, index) => (
-            <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+          {features.map((feature, index) => (
+            <Card 
+              key={index} 
+              style={{ 
+                background: 'linear-gradient(135deg, #171617 0%, #1A1919 100%)',
+                borderColor: 'rgba(230,172,85,0.2)'
+              }}
+              className="p-6 hover:shadow-[0_0_15px_rgba(230,172,85,0.15)] transition-shadow"
+            >
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="text-blue-600">
+                  <div style={{ color: '#E6AC55' }}>
                     {feature.icon}
                   </div>
                   <div>
-                    <h4 className="font-bold mb-2">{feature.title}</h4>
-                    <p className="text-gray-600 mb-4">{feature.description}</p>
+                    <h4 className="font-poppins font-bold mb-2 text-white">{feature.title}</h4>
+                    <p className="text-gray-300 mb-4">{feature.description}</p>
                   </div>
                 </div>
                 <ul className="space-y-2">
                   {feature.points.map((point, idx) => (
                     <li key={idx} className="flex items-center gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600" />
-                      <span className="text-sm text-gray-700">{point}</span>
+                      <ArrowRight className="w-4 h-4" style={{ color: '#E6AC55' }} />
+                      <span className="text-sm text-gray-300">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -194,22 +218,32 @@ export default function MasterclassLanding() {
         </div>
 
         {/* Final CTA */}
-        <div className="text-center max-w-2xl mx-auto bg-gradient-to-r from-blue-50 to-purple-50 p-12 rounded-lg">
-          <h2 className="text-3xl font-bold mb-6">
-            Join the Future of Music Production
+        <Card style={{ 
+          background: 'linear-gradient(135deg, #171617 0%, #1A1919 100%)',
+          borderColor: 'rgba(230,172,85,0.2)'
+        }} className="text-center max-w-2xl mx-auto p-12">
+          <h2 className="font-poppins text-3xl font-bold mb-6 text-white">
+            Create Unlimited Sounds
           </h2>
-          <p className="text-xl text-gray-700 mb-8">
-            Walk away with knowledge that only a handful of producers in the world currently possess. Create sounds that have never been heard before. Make music that's truly yours.
+          <p className="text-xl text-gray-300 mb-8">
+            Join an elite group of producers pushing the boundaries of what's possible in music production. Create sounds that have never existed before.
           </p>
           <div className="space-y-4">
-            <Button size="lg" className="bg-blue-900 text-white hover:bg-blue-800 text-lg px-8 py-6">
-              Transform Your Music Production Today
+            <Button 
+              size="lg" 
+              style={{ 
+                backgroundColor: '#E6AC55',
+                color: '#0D0C0D'
+              }}
+              className="hover:opacity-90 text-lg px-8 py-6 font-bold"
+            >
+              Transform Your Music Production
             </Button>
-            <p className="text-sm text-gray-600">
-              Limited spots available - Once they're gone, they're gone.
+            <p className="text-sm text-white">
+              Limited spots available for this groundbreaking experience.
             </p>
           </div>
-        </div>
+        </Card>
       </div>
     </div>
   );
