@@ -3,6 +3,8 @@ import Card from './components/ui/Card';
 import Button from './components/ui/Button';
 import myPhoto from './assets/photo.webp';
 import teacherPhoto from './assets/taches.webp';
+import logo from './assets/logo.png'
+import { FaInstagram, FaYoutube, FaSpotify, FaBandcamp, FaUsers } from 'react-icons/fa';
 import { Check, Clock, Music, Zap, Brain, Target, ArrowRight, Sparkles, Globe, Heart, Infinity } from 'lucide-react';
 
 const features = [
@@ -76,14 +78,14 @@ export default function MasterclassLanding() {
               A.I. SAMPLING MASTERCLASS
             </h1>
             <p className="text-xl md:text-2xl mb-8">
-              A Revolutionary Masterclass in AI-Powered Sound Creation
+              A Revolutionary Masterclass in AI-Assisted Music Production
             </p>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
-              Master the most advanced AI music production techniques that allow you to create sounds no one has heard before. Redefine your creative boundaries.
+              Master the <b><u>most</u></b> cutting-edge AI music production techniques that very, very few people on Earth even know exist. Redefine your creative boundaries.
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
               <Clock className="w-5 h-5" style={{ color: '#E6AC55' }} />
-              <span className="text-lg">2 Hours of Creative Liberation</span>
+              <span className="text-lg">Thursday 7th November | 11AM - 1PM EST </span>
             </div>
             <a href="https://www.tachesteaches.courses/offers/Diu98a77" target="_blank" rel="noopener noreferrer">
               <Button 
@@ -263,7 +265,7 @@ export default function MasterclassLanding() {
         {/* Teacher Bio Section */}
 <div className="container mx-auto px-4 py-16 text-center">
   <div className="max-w-3xl mx-auto">
-    <img src={teacherPhoto} alt="TÂCHES" className="mx-auto mb-8 rounded-full w-48 h-48 object-cover" />
+    <img src={teacherPhoto} alt="TÂCHES" className="mx-auto mb-8 rounded-full w-56 h-56 object-cover" />
     <h2 className="font-poppins text-3xl font-bold mb-4">Meet Your Instructor</h2>
     <p className="text-lg text-gray-300 mb-8">
       TÂCHES is an internationally renowned independent house music producer with over 70 million streams and a career that has taken him across the world, playing major festivals and clubs. Having released music on leading labels like Anjunadeep and Get Physical, and now running his own label, Glitter Cowboy, TÂCHES is known for his innovative production techniques and artistic mastery. His approach blends cutting-edge technology with a deeply emotional and artistic touch, making him a sought-after mentor for producers looking to break creative boundaries and build a sustainable, independent music career.
@@ -272,6 +274,38 @@ export default function MasterclassLanding() {
 </div>
 
       </div>
+      {/* Social Media Icons Section */}
+<div className="bg-black py-8 text-center">
+  <div className="container mx-auto">
+    <div className="flex justify-center gap-6 mb-4">
+    <a href="https://open.spotify.com/artist/0xD1RASjJGXnTh5NxdrKxF?si=la9CxFKPQDurOdvys2wCgA" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+        <FaSpotify className="w-8 h-8" />
+      </a>
+      <a href="https://www.instagram.com/officialtaches/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+        <FaInstagram className="w-8 h-8" />
+      </a>
+      <a href="https://www.youtube.com/tachesteaches" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+        <FaYoutube className="w-8 h-8" />
+      </a>
+      <a href="https://taches.bandcamp.com/music" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+        <FaBandcamp className="w-8 h-8" />
+      </a>
+      <a href="https://www.skool.com/music" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+  <FaUsers className="w-8 h-8" />
+</a>
+    </div>
+    <p className="text-white text-sm">
+      Follow TÂCHES on social media for more content
+    </p>
+  </div>
+</div>
     </div>
   );
 }
+
+
+
+
+
+{/* Skool Community Link */}
+
