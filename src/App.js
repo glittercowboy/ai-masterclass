@@ -299,7 +299,7 @@ export default function MasterclassLanding() {
   <div className="max-w-3xl mx-auto">
     <img src={teacherPhoto} alt="TÂCHES" className="mx-auto mb-8 rounded-full w-56 h-56 object-cover" />
     <h2 className="font-poppins text-3xl font-bold mb-4">Meet Your Instructor</h2>
-    <p className="text-lg text-gray-300 mb-8">
+    <p className="text-lg text-gray-300 mb0">
       TÂCHES is an internationally renowned independent house music producer with over 70 million streams and a career that has taken him across the world, playing major festivals and clubs. Having released music on leading labels like Anjunadeep and Get Physical, and now running his own label, Glitter Cowboy, TÂCHES is known for his innovative production techniques and artistic mastery. His approach blends cutting-edge technology with a deeply emotional and artistic touch, making him a sought-after mentor for producers looking to break creative boundaries and build a sustainable, independent music career.
     </p>
   </div>
