@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from './components/ui/Card';
 import Button from './components/ui/Button';
-
+import myPhoto from './assets/photo.webp';
+import teacherPhoto from './assets/taches.webp';
 import { Check, Clock, Music, Zap, Brain, Target, ArrowRight, Sparkles, Globe, Heart, Infinity } from 'lucide-react';
 
 const features = [
@@ -60,6 +61,11 @@ export default function MasterclassLanding() {
       }}>
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-3xl mx-auto text-center">
+          <img 
+              src={myPhoto} 
+              alt="Custom Photo" 
+              style={{ width: '100%', height: 'auto', marginBottom: '20px' }} 
+            />
             <div className="flex justify-center mb-6">
               <Infinity className="w-8 h-8" style={{ color: '#E6AC55' }} />
             </div>
@@ -107,7 +113,8 @@ export default function MasterclassLanding() {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16
+      ">
         {/* Possibilities Section */}
         <div className="max-w-3xl mx-auto mb-16">
           <div className="space-y-8 text-lg text-white">
@@ -224,7 +231,7 @@ export default function MasterclassLanding() {
         <Card style={{ 
           background: 'linear-gradient(135deg, #171617 0%, #1A1919 100%)',
           borderColor: 'rgba(230,172,85,0.2)'
-        }} className="text-center max-w-2xl mx-auto p-12">
+        }} className="text-center max-w-2xl mx-auto p-16">
           <h2 className="font-poppins text-3xl font-bold mb-6 text-white">
             Create Unlimited Sounds
           </h2>
@@ -248,7 +255,18 @@ export default function MasterclassLanding() {
               Limited spots available for this groundbreaking experience.
             </p>
           </div>
-        </Card>
+        </Card> 
+        {/* Teacher Bio Section */}
+<div className="container mx-auto px-4 py-16 text-center">
+  <div className="max-w-3xl mx-auto">
+    <img src={teacherPhoto} alt="TÂCHES" className="mx-auto mb-8 rounded-full w-48 h-48 object-cover" />
+    <h2 className="font-poppins text-3xl font-bold mb-4">Meet Your Instructor</h2>
+    <p className="text-lg text-gray-300 mb-8">
+      TÂCHES is an internationally renowned independent house music producer with over 70 million streams and a career that has taken him across the world, playing major festivals and clubs. Having released music on leading labels like Anjunadeep and Get Physical, and now running his own label, Glitter Cowboy, TÂCHES is known for his innovative production techniques and artistic mastery. His approach blends cutting-edge technology with a deeply emotional and artistic touch, making him a sought-after mentor for producers looking to break creative boundaries and build a sustainable, independent music career.
+    </p>
+  </div>
+</div>
+
       </div>
     </div>
   );
