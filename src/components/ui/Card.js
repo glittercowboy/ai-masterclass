@@ -1,8 +1,9 @@
+// src/components/ui/Card.js
 import React from 'react';
 
-const Card = ({ children, className }) => {
+const Card = ({ children, ...props }) => {
   return (
-    <div className={`p-4 shadow-md rounded-lg ${className}`}>
+    <div {...props} className={`p-4 rounded-lg shadow-md ${props.className}`}>
       {children}
     </div>
   );

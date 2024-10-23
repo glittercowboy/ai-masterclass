@@ -1,16 +1,17 @@
 import React from 'react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Check, Clock, Star, Music, Zap, Brain, Target, ArrowRight, X, Sparkles, Globe, Heart, Infinity } from 'lucide-react';
+import Card from './components/ui/Card';
+import Button from './components/ui/Button';
+
+import { Check, Clock, Music, Zap, Brain, Target, ArrowRight, Sparkles, Globe, Heart, Infinity } from 'lucide-react';
 
 const features = [
   {
     icon: <Music className="w-6 h-6" />,
     title: "AI-Powered Sound Creation",
-    description: "Transform abstract concepts into precisely crafted sonic elements that capture your exact vision.",
+    description: "Generate unique sounds from scratch using advanced AI tools. Push your creativity beyond traditional sampling and create custom sonic elements.",
     points: [
-      "Master cutting-edge AI tools",
-      "Create unprecedented sounds",
+      "Master groundbreaking AI tools",
+      "Create sounds no one else has heard",
       "Design unique sonic textures",
       "Shape emotional soundscapes"
     ]
@@ -18,34 +19,34 @@ const features = [
   {
     icon: <Zap className="w-6 h-6" />,
     title: "Cultural Sound Fusion",
-    description: "Break down barriers between musical traditions to create authentic, innovative sonic landscapes.",
+    description: "Blend unique feels of different cultural eras throughout history and musical traditions from across the globe to craft innovative and hybrid soundscapes.",
     points: [
-      "Blend diverse musical traditions",
-      "Create new sonic hybrids",
-      "Design cross-cultural rhythms",
-      "Craft unique textures"
+      "Combine global influences seamlessly",
+      "Create fresh, genre-bending music",
+      "Design culturally diverse rhythms",
+      "Craft sounds with deep authenticity"
     ]
   },
   {
     icon: <Brain className="w-6 h-6" />,
     title: "Revolutionary Workflows",
-    description: "Transform AI into an extension of your creative process, enhancing rather than replacing your vision.",
+    description: "Incorporate AI into your creative process to enhance your artistic voice. Use advanced tools to enhance—not replace—your vision.",
     points: [
-      "Pioneer new production methods",
-      "Create emotional depth",
-      "Master advanced techniques",
-      "Build unique sound palettes"
+      "Integrate AI into your workflow",
+      "Create emotional depth with ease",
+      "Apply advanced production techniques",
+      "Refine your unique sound"
     ]
   },
   {
     icon: <Target className="w-6 h-6" />,
     title: "Advanced Sound Design",
-    description: "Push the boundaries of possibility with cutting-edge techniques that redefine music production.",
+    description: "Redefine what’s possible in music production by mastering cutting-edge techniques that will push your sound into new dimensions.",
     points: [
-      "Master professional tools",
-      "Create impossible combinations",
-      "Design evolving sounds",
-      "Build signature sounds"
+      "Unlock professional sound design techniques",
+      "Blend genres that were once incompatible",
+      "Design evolving soundscapes",
+      "Build your signature sound"
     ]
   }
 ];
@@ -63,28 +64,30 @@ export default function MasterclassLanding() {
               <Infinity className="w-8 h-8" style={{ color: '#E6AC55' }} />
             </div>
             <h1 className="font-poppins text-4xl md:text-6xl font-bold mb-6">
-              Experience the Impossible
+              A.I. Sampling Masterclass
             </h1>
             <p className="text-xl md:text-2xl mb-8">
               A Revolutionary Masterclass in AI-Powered Sound Creation
             </p>
             <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
-              Master groundbreaking techniques that push the boundaries of what's possible in music production. Create sounds that have never existed before.
+              Master the most advanced AI music production techniques that allow you to create sounds no one has heard before. Redefine your creative boundaries.
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
               <Clock className="w-5 h-5" style={{ color: '#E6AC55' }} />
               <span className="text-lg">2 Hours of Creative Liberation</span>
             </div>
-            <Button 
-              size="lg" 
-              style={{ 
-                backgroundColor: '#E6AC55',
-                color: '#0D0C0D'
-              }}
-              className="hover:opacity-90 text-lg px-8 py-6 font-bold"
-            >
-              Begin Your Journey
-            </Button>
+            <a href="https://www.tachesteaches.courses/offers/Diu98a77" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                style={{ 
+                  backgroundColor: '#E6AC55',
+                  color: '#0D0C0D'
+                }}
+                className="hover:opacity-90 text-lg px-8 py-6 font-bold"
+              >
+                Sign Up Now
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -97,7 +100,7 @@ export default function MasterclassLanding() {
               Pioneer the Future of Sound
             </h2>
             <p className="text-xl text-gray-300">
-              Push beyond traditional sampling constraints. Create emotional, deeply personal music that redefines what's possible.
+              Move beyond conventional sampling methods. Use AI to generate sonic landscapes that blend cultural, emotional, and musical traditions. Create your own sound.
             </p>
           </div>
         </div>
@@ -118,15 +121,15 @@ export default function MasterclassLanding() {
               <ul className="space-y-4 text-white">
                 <li className="flex items-start gap-3">
                   <Sparkles className="w-6 h-6 mt-1" style={{ color: '#E6AC55' }} />
-                  <span>Generate sounds that have never existed in human history</span>
+                  <span>Generate sounds that have never existed in human history.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Globe className="w-6 h-6 mt-1" style={{ color: '#E6AC55' }} />
-                  <span>Blend cultural elements in ways that defy traditional boundaries</span>
+                  <span>Blend diverse cultural and musical influences to craft entirely original compositions.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Heart className="w-6 h-6 mt-1" style={{ color: '#E6AC55' }} />
-                  <span>Create emotional landscapes that speak directly to the soul</span>
+                  <span>Create emotive soundscapes that connect deeply with your audience.</span>
                 </li>
               </ul>
             </Card>
@@ -229,16 +232,18 @@ export default function MasterclassLanding() {
             Join an elite group of producers pushing the boundaries of what's possible in music production. Create sounds that have never existed before.
           </p>
           <div className="space-y-4">
-            <Button 
-              size="lg" 
-              style={{ 
-                backgroundColor: '#E6AC55',
-                color: '#0D0C0D'
-              }}
-              className="hover:opacity-90 text-lg px-8 py-6 font-bold"
-            >
-              Transform Your Music Production
-            </Button>
+            <a href="https://www.tachesteaches.courses/offers/Diu98a77" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                style={{ 
+                  backgroundColor: '#E6AC55',
+                  color: '#0D0C0D'
+                }}
+                className="hover:opacity-90 text-lg px-8 py-6 font-bold"
+              >
+                Transform Your Music Production
+              </Button>
+            </a>
             <p className="text-sm text-white">
               Limited spots available for this groundbreaking experience.
             </p>
