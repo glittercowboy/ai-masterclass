@@ -69,8 +69,11 @@ export default function MasterclassLanding() {
             <div className="flex justify-center mb-6">
               <Infinity className="w-8 h-8" style={{ color: '#E6AC55' }} />
             </div>
-            <h1 className="font-poppins text-4xl md:text-6xl font-bold mb-6">
-              A.I. Sampling Masterclass
+            <p className="text-xl md:text-2xl mb-2">
+              TÂCHES PRESENTS:
+            </p>
+            <h1 className="font-poppins text-4xl md:text-6xl font-bold mt-0 mb-6">
+              A.I. SAMPLING MASTERCLASS
             </h1>
             <p className="text-xl md:text-2xl mb-8">
               A Revolutionary Masterclass in AI-Powered Sound Creation
@@ -97,6 +100,7 @@ export default function MasterclassLanding() {
           </div>
         </div>
       </div>
+    
 
       {/* Vision Section */}
       <div style={{ backgroundColor: '#171617' }} className="py-16">
