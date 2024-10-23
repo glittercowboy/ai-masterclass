@@ -117,7 +117,7 @@ export default function MasterclassLanding() {
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
               <Clock className="w-5 h-5" style={{ color: '#E6AC55' }} />
-              <span className="text-lg">Thursday 7th November | 11AM - 1PM EST </span>
+              <span className="text-lg">Thurs 7th November | 11AM-1PM EST </span>
             </div>
             <a href="https://www.tachesteaches.courses/offers/Diu98a77" target="_blank" rel="noopener noreferrer">
               <Button 
