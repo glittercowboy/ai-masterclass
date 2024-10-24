@@ -137,18 +137,43 @@ export default function MasterclassLanding() {
     
 
       {/* Vision Section */}
-      <div style={{ backgroundColor: '#171617' }} className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="font-poppins text-3xl md:text-4xl font-bold">
-              Pioneer the Future of Sound
-            </h2>
-            <p className="text-xl text-gray-300">
-              Move beyond conventional sampling methods. Use AI to generate sonic landscapes that blend cultural, emotional, and musical traditions. Create your own sound.
-            </p>
-          </div>
-        </div>
-      </div>
+<div style={{ backgroundColor: '#171617' }} className="py-16">
+  <div className="container mx-auto px-4">
+    <div className="max-w-3xl mx-auto text-center space-y-8">
+      <h2 className="font-poppins text-3xl md:text-4xl font-bold">
+        Stop Wasting Time with Outdated Sampling Techniques
+      </h2>
+      <p className="text-xl text-gray-300">
+        Let’s face it—sampling is one of the most powerful tools a producer has, but it’s also incredibly limiting:
+      </p>
+      <ul className="text-lg text-gray-300 text-left space-y-4">
+        <li className="flex items-start gap-2">
+          <ArrowRight className="w-4 h-4 mt-1" style={{ color: '#E6AC55' }} />
+          <span>You spend hours sifting through Splice, Loopcloud, or YouTube, hoping to find that one sample that fits... only to settle for something that’s just okay.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <ArrowRight className="w-4 h-4 mt-1" style={{ color: '#E6AC55' }} />
+          <span>You find a golden sample, only to discover that everyone else is using the same sound. Your track starts to sound like everyone else’s.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <ArrowRight className="w-4 h-4 mt-1" style={{ color: '#E6AC55' }} />
+          <span>You dig through old vinyls or obscure records, trying to find that authentic texture, only to come up empty-handed or disappointed with the quality.</span>
+        </li>
+      </ul>
+      <p className="text-xl text-gray-300">
+        Sampling is powerful, but it’s limited by two things:
+      </p>
+      <ol className="list-decimal text-left text-lg text-gray-300 space-y-4 ml-6">
+        <li>What already exists.</li>
+        <li>The luck of what you can find.</li>
+      </ol>
+      <p className="text-xl text-gray-300">
+        Imagine if you didn’t have to rely on the luck of discovery. What if you could generate the perfect sound, tailored to your creative vision, whenever you wanted? This is the power of AI sampling. It’s the ultimate shortcut to unlocking limitless creativity without wasting hours on dead-end searches.
+      </p>
+    </div>
+  </div>
+</div>
+
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16
