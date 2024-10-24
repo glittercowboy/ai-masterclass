@@ -164,8 +164,8 @@ export default function MasterclassLanding() {
         Sampling is powerful, but it’s limited by two things:
       </p>
       <ol className="list-decimal text-left text-lg text-gray-300 space-y-4 ml-6">
-        <li>What already exists.</li>
-        <li>The luck of what you can find.</li>
+        <li>You can only sample what already exists.</li>
+        <li>You are limited by the luck of what you can find.</li>
       </ol>
       <p className="text-xl text-gray-300">
         Imagine if you didn’t have to rely on the luck of discovery. What if you could generate the perfect sound, tailored to your creative vision, whenever you wanted? This is the power of AI sampling. It’s the ultimate shortcut to unlocking limitless creativity without wasting hours on dead-end searches.
@@ -320,7 +320,7 @@ export default function MasterclassLanding() {
           </div>
         </Card> 
         {/* Teacher Bio Section */}
-<div className="teacher-bio-section flex flex-col justify-center items-center text-center pt-20 pb-2">
+<div className="teacher-bio-section flex flex-col justify-center items-center text-center pt-16 pb-8">
   <div className="max-w-3xl">
     <img src={teacherPhoto} alt="TÂCHES" className="mx-auto mb-8 rounded-full w-56 h-56 object-cover" />
     <h2 className="font-poppins text-3xl font-bold mb-4">Meet Your Instructor</h2>
