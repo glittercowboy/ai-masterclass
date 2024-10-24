@@ -320,8 +320,8 @@ export default function MasterclassLanding() {
           </div>
         </Card> 
         {/* Teacher Bio Section */}
-<div className="container mx-auto px-4 py-16 text-center">
-  <div className="max-w-3xl mx-auto">
+<div className="teacher-bio-section flex flex-col justify-center items-center text-center pt-20 pb-2">
+  <div className="max-w-3xl">
     <img src={teacherPhoto} alt="TÂCHES" className="mx-auto mb-8 rounded-full w-56 h-56 object-cover" />
     <h2 className="font-poppins text-3xl font-bold mb-4">Meet Your Instructor</h2>
     <p className="text-lg text-gray-300 mb0">
@@ -329,6 +329,8 @@ export default function MasterclassLanding() {
     </p>
   </div>
 </div>
+
+
 
       </div>
       {/* Social Media Icons Section */}
