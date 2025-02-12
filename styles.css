@@ -1395,3 +1395,71 @@ main {
         width: auto;
     }
 }
+
+/* Who is this for? section */
+.who-section {
+    background-color: var(--color-subtle);
+    padding: 4rem 0;
+}
+
+.requirements-list {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.requirements-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.requirements-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.requirements-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.who-warning {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-accent);
+    background-color: rgba(212, 155, 68, 0.1);
+}
+
+.who-warning p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+    .who-section {
+        padding: 3rem 0;
+    }
+
+    .requirements-list li {
+        font-size: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .who-warning {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    .who-warning p {
+        font-size: 1rem;
+    }
+}
