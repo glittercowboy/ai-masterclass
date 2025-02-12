@@ -726,70 +726,60 @@ main {
 }
 
 .faq-content {
-    width: 800px;
+    max-width: var(--container-width);
     margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.faq-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    color: black;
+    padding: 2rem 1rem;
 }
 
 .faq-item {
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
+    margin-bottom: 2rem;
+    background: var(--color-subtle);
+    border-radius: 8px;
+    padding: 1.5rem;
 }
 
 .faq-question {
-    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-text);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 1.1rem;
-    transition: background 0.3s ease;
-    padding: 1rem 0;
-}
-
-.faq-question:hover {
-    background: rgba(230, 172, 85, 0.6);
-    margin: -0.25rem -0.5rem;
-    padding: 1.25rem 0.5rem;
-    transition: all 0.3s ease;
+    align-items: flex-start;
 }
 
 .faq-question span {
-    font-weight: 600;
+    flex: 1;
+    padding-right: 1rem;
 }
 
 .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 0;
-    font-size: 1.1rem;
-    background: #f0f0f0;
+    display: block;
+    padding-top: 0.5rem;
 }
 
-.faq-answer.open {
-    max-height: 200px;
-    padding: 1rem 0;
+.faq-answer p {
+    margin: 0;
+    color: var(--color-text-muted);
 }
 
-.arrow {
-    color: var(--color-primary);
-    display: inline-block;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 0.5rem;
-    font-weight: bold;
+/* Remove accordion functionality */
+.arrow.rotatable {
+    display: none;
 }
 
-.arrow.rotated {
-    transform: rotate(90deg);
+@media (max-width: 768px) {
+    .faq-content {
+        padding: 1rem;
+    }
+
+    .faq-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
 }
 
 /* Who Section */
@@ -1363,5 +1353,42 @@ main {
 
     .countdown-item .label {
         font-size: 0.95rem;
+    }
+}
+
+/* Mobile optimization for header */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        padding: 0 1rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        padding: 0 1rem;
+    }
+
+    .header {
+        min-height: 100vh;
+        height: auto;
+        padding: 6rem 1rem;
+    }
+
+    .header__content {
+        padding: 0;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .search-bar {
+        margin: 1rem;
+        width: auto;
     }
 }
