@@ -62,7 +62,7 @@
                         workshop info.</p>
 
                     <div class="read-more-btn-container">
-                        <button class="read-more-btn">Read More</button>
+                        <button class="read-more-btn">SHOW MORE</button>
                     </div>
 
                     <div class="read-more-content hidden">
@@ -124,7 +124,7 @@
                                 techniques and approaches that will help you use AI to create something truly unique
                                 without losing your soul.</b></p>
                         <div class="read-less-btn-container">
-                            <button class="read-less-btn">Read Less</button>
+                            <button class="read-less-btn">SHOW LESS</button>
                         </div>
                     </div>
                 </div>
@@ -405,13 +405,13 @@
             readMoreBtn.addEventListener('click', function () {
                 readMoreContent.classList.toggle('hidden');
                 readMoreNote.classList.add('hidden');
-                readMoreBtn.textContent = readMoreContent.classList.contains('hidden') ? 'Read More' : 'Read Less';
+                readMoreBtn.textContent = readMoreContent.classList.contains('hidden') ? 'SHOW MORE' : 'SHOW LESS';
             });
 
             readLessBtn.addEventListener('click', function () {
                 readMoreContent.classList.toggle('hidden');
                 readMoreNote.classList.remove('hidden');
-                readMoreBtn.textContent = readMoreContent.classList.contains('hidden') ? 'Read More' : 'Read Less';
+                readMoreBtn.textContent = readMoreContent.classList.contains('hidden') ? 'SHOW MORE' : 'SHOW LESS';
             });
         });
     </script>
