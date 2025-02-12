@@ -1407,6 +1407,13 @@ main {
     margin: 0 auto 2rem;
 }
 
+.requirements-list h4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-size: 1.25rem;
+}
+
 .requirements-list ul {
     list-style: none;
     padding: 0;
